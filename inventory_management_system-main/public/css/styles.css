@@ -1,0 +1,320 @@
+/* Reset default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: Arial, sans-serif;
+    font-size: large;
+}
+
+/* Body styles - Changed to dark background and light text */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    margin: 0; /* Removed margin for proper alignment */
+    justify-content: space-between; /* Center the content */
+    align-items: center;
+    min-height: 100vh; /* Full height for centering */
+    flex-direction: column; /* Center elements vertically */
+}
+
+/* Header and Navbar styles */
+header {
+    background-color: #333; /* Dark gray background for header */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    width: 100%; /* Full width */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center nav items */
+    align-items: center;
+    width: 1024px; /* Full width */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Ensure the ul takes full width */
+    justify-content: space-between; /* Keep space between items */
+}
+
+nav li {
+    display: flex; /* Use flexbox for li */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally within li */
+}
+
+nav a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    padding: 10px 20px; /* Add padding for better click area */
+    border-radius: 0.5rem; /* Rounded corners for links */
+    transition: color 0.3s ease, transform 0.2s ease; /* Transition for color and transform */
+    display: flex; /* Use flex to align text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally in the anchor */
+    text-align: center; /* Center text inside the link */
+}
+
+/* Hover effect for navbar links */
+nav a:hover {
+    color: #fff; /* White text for hover effect on navbar */
+    background-color: rgba(0, 0, 0, 0.4); /* Background change on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* General link styles */
+/* Prevent links from affecting button styles */
+a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Navbar specific styles to override general link styles */
+nav a:link, nav a:visited {
+    color: #fff; /* Change to white for navbar links */
+}
+
+/* Hover effect for all links */
+a:hover {
+    color: #fff; /* Change to white on hover */
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* Active link (when the link is being clicked) */
+a:active {
+    color: #ff0000; /* Change to red when the link is active */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center; /* Center text in the table */
+    color: #fff; /* White text for table */
+}
+
+table thead th {
+    background-color: #444; /* Darker gray for table header */
+    padding: 10px;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #222; /* Dark background for even rows */
+}
+
+table tbody tr:hover {
+    background-color: #555; /* Light gray on row hover */
+}
+
+table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #fff; /* White text for table cells */
+}
+
+/* Container styles */
+.container {
+    max-width: 60rem; /* Centered width */
+    width: 90%; /* Responsive */
+    margin: 2rem auto; /* Center the container */
+    padding: 2rem;
+    background-color: rgba(50, 50, 50, 0.9); /* Dark gray background */
+    border-radius: 1rem; /* Rounded corners */
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Categories section */
+.categories {
+    margin: 0 0;
+}
+
+.categories ul {
+    list-style: none; /* No bullet points */
+    padding: 0; /* No padding */
+}
+
+/* Featured products styles */
+.featured-products {
+    margin: 20px 0;
+}
+
+/* Product grid styles */
+.product-grid {
+    display: flex;
+    justify-content: center; /* Center products */
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.product-card {
+    border: 1px solid #666; /* Border color */
+    border-radius: 1rem;
+    background-color: #444; /* Dark gray background for cards */
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    height: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for transform and shadow */
+}
+
+/* Hover effect */
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.418); /* Light shadow for depth */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    transition: transform 0.2s ease; /* Smooth transition for transform */
+}
+
+/* Hover effect for the image */
+.product-card:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Form styles */
+.form-container {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: #fff; /* White text for labels */
+}
+
+.form-group input, 
+.form-group textarea, 
+.form-group select {
+    width: 90%; /* Width of form elements */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #222; /* Dark background for input fields */
+    color: #fff; /* White text for input fields */
+}
+
+/* Button styles */
+.btn-primary, 
+.btn-secondary {
+    display: inline-block;
+    background-color: #fff; /* White background for buttons */
+    color: #000; /* Black text */
+    padding: 10px 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Ensure link colors are applied correctly */
+.btn-primary a,
+.btn-secondary a {
+    color: #000; /* Black text for links inside buttons */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effects for buttons */
+.btn-primary:hover, 
+.btn-secondary:hover {
+    background-color: #444; /* Darker shade on hover */
+    color: #fff; /* Change text color to white on hover */
+}
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Green for success */
+    color: white;
+    padding: 16px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition effects */
+    transform: translateY(0); /* Start position */
+    opacity: 1; /* Start opacity */
+}
+
+.notification.error {
+    background-color: #f44336; /* Red for errors */
+}
+
+.notification.success {
+    background-color: #4CAF50; /* Green for success */
+}
+
+/* Animate notification on entry */
+.notification {
+    animation: slideIn 0.5s forwards; /* Slide in effect */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 1100px) {
+    .product-grid {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 30%;
+        height: auto;
+    }
+
+    nav {
+        max-width: 60rem;
+        width: 90%;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent for dark theme */
+        border-radius: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
